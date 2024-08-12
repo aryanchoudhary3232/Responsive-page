@@ -1,0 +1,159 @@
+body,
+HTML {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(208, 202, 202, 0.964);
+  height: 80px;
+}
+
+.logo-left {
+  font-size: 1vw;
+  padding-left: 4vw;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 27px;
+}
+
+.right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4vw;
+  padding-right: 3vw;
+}
+
+.right button {
+  background-color: lightseagreen;
+  color: white;
+  border: none;
+  padding: 0.7vw;
+  font-size: 1.1vw;
+}
+
+h3 {
+  font-weight: 900;
+}
+
+.ri-menu-3-fill {
+  font-size: 1.4vw;
+  display: none;
+}
+
+.main {
+  width: 100%;
+  height: calc(100% - 80px);
+  display: flex;
+}
+
+.main-left {
+  width: 50%;
+  padding-left: 4vw;
+  padding-top: 3vw;
+}
+
+.main-left h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 4vw;
+  padding-bottom: 0;
+  margin-bottom: 1px;
+}
+
+.main-left h1 span {
+  color: lightseagreen;
+}
+
+.main-left p {
+  font-size: 1.3vw;
+  padding-top: 12px;
+}
+
+.main-left button {
+  background-color: lightseagreen;
+  color: white;
+  border: none;
+  padding: 1.3vw;
+  font-size: 1.5vw;
+  margin-top: 3vw;
+}
+
+.main-right {
+  width: 50%;
+}
+
+.main-right img {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  nav {
+    background-color: lightseagreen;
+    color: white;
+    height: 70px;
+  }
+
+  h1 {
+    color: white;
+  }
+
+  h3 {
+    display: none;
+  }
+
+  .ri-menu-3-fill {
+    display: block;
+    font-size: 4vw;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 70px);
+  }
+
+  .main-left {
+    width: 95%;
+    height: 47vw;
+  }
+
+  .main-left h1 {
+    font-size: 8vw;
+  }
+
+  .main-left p {
+    font-size: 2vw;
+  }
+
+  .main-left button {
+    padding: 2vw;
+    font-size: 2vw;
+  }
+
+  .main-right {
+    width: 100%;
+    height: calc(100% - 47vh);
+    padding-top: 6.6vw;
+  }
+
+  .main-right img {
+    height: 100%;
+  }
+}
